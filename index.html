@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Deftech Private Limited</title>
+    <style>
+        :root {
+            --primary: #0a2e52; /* Navy Blue */
+            --secondary: #4a5d75;
+            --light: #f4f7f6;
+            --white: #ffffff;
+            --accent: #c0392b;
+        }
+        html { scroll-behavior: smooth; }
+        body { margin: 0; font-family: 'Segoe UI', sans-serif; color: #333; line-height: 1.6; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+        
+        /* Header */
+        header { background: var(--primary); color: white; padding: 1rem 0; position: sticky; top: 0; z-index: 100; }
+        .nav-bar { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.5rem; font-weight: bold; text-transform: uppercase; }
+        nav a { color: white; text-decoration: none; margin-left: 20px; font-size: 0.9rem; transition: opacity 0.3s; }
+        nav a:hover { opacity: 0.8; }
+        
+        /* Hero */
+        .hero { 
+            background: linear-gradient(rgba(10,46,82,0.9), rgba(10,46,82,0.8)), url('https://source.unsplash.com/1600x900/?technology,defence'); 
+            background-size: cover; background-position: center; color: white; text-align: center; padding: 100px 20px; 
+        }
+        .hero h1 { font-size: 2.5rem; margin-bottom: 20px; }
+        .hero p { max-width: 850px; margin: 0 auto 25px; font-size: 1.15rem; line-height: 1.7; }
+        .hero-badges { margin-top: 40px; }
+        .hero-badges span { 
+            display: inline-block; padding: 10px 20px; border: 1px solid rgba(255,255,255,0.4); 
+            margin: 5px; border-radius: 4px; font-size: 0.95rem; background: rgba(255,255,255,0.05);
+        }
+
+        /* Sections */
+        section { padding: 70px 0; }
+        h2 { text-align: center; color: var(--primary); text-transform: uppercase; margin-bottom: 20px; font-size: 1.8rem; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 40px; }
+        
+        .card { background: var(--light); padding: 30px; border-radius: 8px; border-top: 4px solid var(--primary); transition: transform 0.3s, box-shadow 0.3s; }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 5px 20px rgba(0,0,0,0.1); }
+        .card h3 { margin-top: 0; color: var(--primary); font-size: 1.2rem; }
+        .card ul { padding-left: 20px; }
+        .card li { margin-bottom: 8px; }
+
+        /* Steps */
+        .step-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 25px; text-align: center; margin-top: 40px; }
+        .step-num { font-size: 2.5rem; color: #ddd; font-weight: bold; }
+        .step-grid h4 { color: var(--primary); margin: 10px 0; }
+
+        /* Contact */
+        .contact { background: var(--primary); color: white; }
+        .contact h2 { color: white; }
+        .contact-box { background: rgba(255,255,255,0.1); padding: 25px; border-radius: 8px; }
+        .btn { display: inline-block; background: white; color: var(--primary); padding: 12px 25px; text-decoration: none; border-radius: 4px; margin-top: 15px; font-weight: bold; transition: background 0.3s;}
+        .btn:hover { background: var(--light); }
+
+        /* Footer */
+        footer { background: #051a2e; color: #aaa; text-align: center; padding: 30px 20px; font-size: 0.85rem; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container nav-bar">
+        <div class="logo">Advanced Deftech</div>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#offerings">Offerings</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="container">
+        <h1>Advancing Defence. Enabling Technology. Delivering Reliability.</h1>
+        <p>Advanced Deftech Private Limited is an India-based defence and advanced technology company engaged in the supply, sourcing, and integration of defence-grade products and solutions for domestic and global markets.</p>
+        <p>We operate at the intersection of defence, technology, and global trade, enabling armed forces, government entities, OEMs, and system integrators with reliable, compliant, and mission-critical solutions.</p>
+        <div class="hero-badges">
+            <span>🛡️ Defence-grade Reliability</span>
+            <span>✓ Compliance-driven Execution</span>
+            <span>🤝 Long-term Strategic Partnerships</span>
+            <span>🌍 Global Reach with Indian Foundations</span>
+        </div>
+    </div>
+</section>
+
+<section id="about">
+    <div class="container">
+        <h2>About Us</h2>
+        <p style="text-align: center; max-width: 900px; margin: 0 auto 40px; font-size: 1.1rem; line-height: 1.8;">Advanced Deftech Private Limited is incorporated in India with a focused mandate to support the defence and strategic technology ecosystem through responsible sourcing, supply, and integration of products and solutions.</p>
+        <p style="text-align: center; max-width: 900px; margin: 0 auto 40px; font-size: 1rem; line-height: 1.8;">We work closely with Indian and international manufacturers, OEMs, and technology providers to deliver products that meet stringent defence standards, regulatory requirements, and operational expectations. Our approach is partner-centric, ensuring transparency, trust, and long-term value creation across every engagement.</p>
+        
+        <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));">
+            <div class="card" style="text-align: center; background: white; border: 2px solid var(--primary);">
+                <div style="font-size: 2.5rem; color: var(--primary); margin-bottom: 15px;">🎯</div>
+                <h3>Our Vision</h3>
+                <p style="font-size: 1rem; line-height: 1.7;">To be a trusted global partner in defence and advanced technology, contributing to national security, technological advancement, and sustainable growth.</p>
+            </div>
+            <div class="card" style="text-align: center; background: white; border: 2px solid var(--primary);">
+                <div style="font-size: 2.5rem; color: var(--primary); margin-bottom: 15px;">🚀</div>
+                <h3>Our Mission</h3>
+                <p style="font-size: 1rem; line-height: 1.7;">To responsibly supply and integrate defence and technology products that meet global standards, while strengthening India's role in the international defence value chain.</p>
+            </div>
+        </div>
+        
+        <h3 style="text-align: center; color: var(--primary); margin: 50px 0 30px; text-transform: uppercase; font-size: 1.3rem;">Our Core Values</h3>
+        <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));">
+            <div class="card" style="text-align: center;">
+                <div style="font-size: 2.5rem; color: var(--primary); margin-bottom: 15px;">⚖️</div>
+                <h3>Integrity</h3>
+                <p>Ethical conduct and regulatory compliance at all times</p>
+            </div>
+            <div class="card" style="text-align: center;">
+                <div style="font-size: 2.5rem; color: var(--primary); margin-bottom: 15px;">🛡️</div>
+                <h3>Reliability</h3>
+                <p>Delivering mission-critical solutions without compromise</p>
+            </div>
+            <div class="card" style="text-align: center;">
+                <div style="font-size: 2.5rem; color: var(--primary); margin-bottom: 15px;">🤝</div>
+                <h3>Collaboration</h3>
+                <p>Building long-term partnerships across borders</p>
+            </div>
+            <div class="card" style="text-align: center;">
+                <div style="font-size: 2.5rem; color: var(--primary); margin-bottom: 15px;">⭐</div>
+                <h3>Excellence</h3>
+                <p>Continuous improvement in quality and execution</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="offerings" style="background: #f9f9f9;">
+    <div class="container">
+        <h2>Our Offerings</h2>
+        <div class="grid">
+            <div class="card" style="text-align: center;">
+                <div style="font-size: 3rem; color: var(--primary); margin-bottom: 15px;">🔧</div>
+                <h3>Defence Products Supply</h3>
+                <p style="margin-bottom: 15px; color: #666;">Comprehensive supply of defence-grade hardware and components</p>
+                <ul style="text-align: left;">
+                    <li>Defence hardware and components</li>
+                    <li>Ammunition, sub-systems, and assemblies (as permitted by law)</li>
+                    <li>Spares, maintenance, and support items</li>
+                </ul>
+            </div>
+            <div class="card" style="text-align: center;">
+                <div style="font-size: 3rem; color: var(--primary); margin-bottom: 15px;">📡</div>
+                <h3>Defence & Advanced Technology</h3>
+                <p style="margin-bottom: 15px; color: #666;">Cutting-edge technology solutions for modern defence needs</p>
+                <ul style="text-align: left;">
+                    <li>Defence electronics and communication systems</li>
+                    <li>Surveillance, sensing, and monitoring solutions</li>
+                    <li>Dual-use and strategic technologies</li>
+                </ul>
+            </div>
+            <div class="card" style="text-align: center;">
+                <div style="font-size: 3rem; color: var(--primary); margin-bottom: 15px;">🌐</div>
+                <h3>Global Sourcing & Trade</h3>
+                <p style="margin-bottom: 15px; color: #666;">Seamless cross-border coordination and compliance</p>
+                <ul style="text-align: left;">
+                    <li>Indian manufacturers to global defence markets</li>
+                    <li>International OEMs to Indian defence and government customers</li>
+                    <li>End-to-end coordination, documentation, and compliance support</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <h2>Our Approach</h2>
+        <p style="text-align: center; max-width: 900px; margin: 0 auto 30px; font-size: 1.05rem;">We follow a structured and compliant engagement model to ensure confidence for clients operating in highly regulated and mission-critical environments.</p>
+        <div class="step-grid">
+            <div><div class="step-num">01</div><h4>Requirement Understanding</h4><p>Technical, operational, and regulatory alignment</p></div>
+            <div><div class="step-num">02</div><h4>Sourcing & Validation</h4><p>Partner identification and product qualification</p></div>
+            <div><div class="step-num">03</div><h4>Compliance & Approvals</h4><p>Adherence to Indian and international regulations</p></div>
+            <div><div class="step-num">04</div><h4>Execution & Delivery</h4><p>Secure, timely, and reliable supply</p></div>
+            <div><div class="step-num">05</div><h4>Lifecycle Support</h4><p>Long-term engagement beyond delivery</p></div>
+        </div>
+    </div>
+</section>
+
+<section style="background: #f9f9f9;">
+    <div class="container">
+        <h2>Global Perspective</h2>
+        <p style="text-align: center; max-width: 900px; margin: 0 auto 30px; font-size: 1.05rem; line-height: 1.8;">Advanced Deftech Private Limited works with partners and clients across multiple geographies, supporting defence and technology programs that require cross-border coordination, export compliance, and trusted execution.</p>
+        <div class="grid">
+            <div class="card" style="text-align: center;">
+                <div style="font-size: 2.5rem; color: var(--primary); margin-bottom: 15px;">🌍</div>
+                <h3>International Defence Practices</h3>
+                <p>Deep knowledge of international defence procurement practices and standards across multiple jurisdictions</p>
+            </div>
+            <div class="card" style="text-align: center;">
+                <div style="font-size: 2.5rem; color: var(--primary); margin-bottom: 15px;">📋</div>
+                <h3>Regulatory Awareness</h3>
+                <p>Comprehensive understanding of export-import regulations and compliance requirements</p>
+            </div>
+            <div class="card" style="text-align: center;">
+                <div style="font-size: 2.5rem; color: var(--primary); margin-bottom: 15px;">🤝</div>
+                <h3>Partner-Driven Execution</h3>
+                <p>Strong collaborative approach with trusted partners ensuring seamless global operations</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <h2>Compliance & Responsibility</h2>
+        <p style="text-align: center; max-width: 900px; margin: 0 auto 30px; font-size: 1.05rem; line-height: 1.8;">Operating in the defence sector requires absolute adherence to laws, policies, and ethical standards. Advanced Deftech Private Limited is committed to maintaining the highest standards of compliance and responsibility.</p>
+        <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+            <div class="card" style="text-align: center; border-top-color: #c0392b;">
+                <div style="font-size: 2.5rem; color: #c0392b; margin-bottom: 15px;">🛡️</div>
+                <h3>Defence Procurement Norms</h3>
+                <p>Full adherence to Indian defence procurement standards and procedures</p>
+            </div>
+            <div class="card" style="text-align: center; border-top-color: #c0392b;">
+                <div style="font-size: 2.5rem; color: #c0392b; margin-bottom: 15px;">✓</div>
+                <h3>Export Control</h3>
+                <p>Strict compliance with export control regulations and end-user verification</p>
+            </div>
+            <div class="card" style="text-align: center; border-top-color: #c0392b;">
+                <div style="font-size: 2.5rem; color: #c0392b; margin-bottom: 15px;">🔒</div>
+                <h3>Data Protection</h3>
+                <p>Rigorous confidentiality protocols and data security measures</p>
+            </div>
+            <div class="card" style="text-align: center; border-top-color: #c0392b;">
+                <div style="font-size: 2.5rem; color: #c0392b; margin-bottom: 15px;">⚖️</div>
+                <h3>Lawful Conduct</h3>
+                <p>Responsible and ethical business practices at all times</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <div class="container">
+        <h2>Contact Us</h2>
+        <div class="grid">
+            <div>
+                <h3>Request for Information (RFI)</h3>
+                <p>Advanced Deftech Private Limited welcomes Requests for Information (RFIs) from government organisations, defence forces, public sector undertakings, OEMs, and authorised industry partners.</p>
+                <p>RFIs may relate to product availability, technical capabilities, sourcing partnerships, compliance requirements, or potential collaborations.</p>
+                <p>All enquiries are handled with strict confidentiality and in accordance with applicable regulatory and contractual obligations.</p>
+                <br>
+                <p><strong>When submitting an RFI, kindly include:</strong></p>
+                <ul style="color: white;">
+                    <li>Organisation name and country</li>
+                    <li>Authorised point of contact</li>
+                    <li>Nature of requirement or enquiry</li>
+                    <li>Indicative timelines (if applicable)</li>
+                    <li>Any relevant technical or compliance references</li>
+                </ul>
+                <p style="font-style: italic; margin-top: 20px;">Our team will review the request and respond through the appropriate official channel.</p>
+            </div>
+            <div class="contact-box">
+                <h3>Submit Your RFI</h3>
+                <p><strong>Email:</strong> sales@advanceddeftech.com</p>
+                <p><strong>Phone:</strong> +91 99901 61414</p>
+                <p><strong>Location:</strong> India</p>
+                <a href="mailto:sales@advanceddeftech.com" class="btn">Send Email</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2026 Advanced Deftech Private Limited. India.</p>
+        <p><strong>Disclaimer:</strong> Certain statements on this website may be forward-looking in nature and subject to regulatory approvals, market conditions, and policy changes. Advanced Deftech Private Limited does not make any representation or warranty regarding future outcomes. This website does not constitute an offer or solicitation for investment or procurement.</p>
+    </div>
+</footer>
+
+</body>
+</html>
